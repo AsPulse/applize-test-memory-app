@@ -6,6 +6,8 @@
   "author": "AsPulse <aspulse.x@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@aspulse/applize": "^1.0.16"
+    "@aspulse/applize": "^1.0.16",
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.3.1"
   }
 }
