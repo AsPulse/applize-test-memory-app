@@ -1,0 +1,11 @@
+{
+  "name": "applize-test-memory-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AsPulse/applize-test-memory-app.git",
+  "author": "AsPulse <aspulse.x@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aspulse/applize": "^1.0.16"
+  }
+}
