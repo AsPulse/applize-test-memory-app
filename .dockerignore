@@ -1,0 +1,8 @@
+.gitignore
+watch.js
+yarn-error.log
+README.md
+LICENSE
+.env
+node_modules
+dist
