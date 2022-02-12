@@ -59,5 +59,7 @@ config();
 MongoClient.connect(process.env.MONGO_URL, (err, db) => {
     database = db;
     console.log('mongodb connected!');
-    applize.run({});
+    applize.run({
+        port: parseInt(process.env.PORT ?? '8080')
+    });
 });
