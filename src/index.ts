@@ -36,6 +36,22 @@ applize.implementsAPI('getWords', async input => {
     return { words: got };
 });
 
+
+applize.implementsAPI('getWordsPage', async input => {
+  const got = await database.db('memory').collection<IWord>('words')
+  .find({}, { sort: input.sort === 'createdAt' ? { createdAt: input.sortLevel } : { memoryLevel: input.sortLevel }, skip: input.skip, limit: input.count }).map(v => ({
+      en: v.en,
+      ja: v.ja,
+      memoryLevel: v.memoryLevel,
+      createdAt: v.createdAt
+  })).toArray();
+  return { words: got };
+});
+
+applize.implementsAPI('wordsCount', async () => {
+  return {  count: await database.db('memory').collection<IWord>('words').countDocuments() };
+});
+
 applize.implementsAPI('randompick', async input => {
     const count = await database.db('memory').collection('words').countDocuments();
     const rand = Math.floor(Math.random() * count);

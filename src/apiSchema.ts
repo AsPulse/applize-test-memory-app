@@ -17,6 +17,19 @@ export interface APISchema extends ServerAPISchema {
             createdAt: number,
         }[] }
     },
+    getWordsPage: {
+      input: { count: number, skip: number, sort: 'createdAt' | 'memoryLevel', sortLevel: 1 | -1 },
+      output: { words: {
+        en: string,
+        ja: string,
+        memoryLevel: number,
+        createdAt: number,
+      }[] }
+    },
+    wordsCount: {
+      input: {},
+      output: { count: number }
+    },
     addWords: {
         input: { data: { en: string, ja: string }[] },
         output: {}
