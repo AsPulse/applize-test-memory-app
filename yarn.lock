@@ -3,9 +3,9 @@
 
 
 "@aspulse/applize@^1.0.16":
-  version "1.0.19"
-  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.19/dc341c314ba27847dabc1eeb01de64316e24caf3c1620b2c8f79870e904898ce#a32b8af426a9bbe9b397177a2a0258cef20a3284"
-  integrity sha512-J7UqhZ6tGv5ff6uVwav1r35lQIWGcvfbwuI048rje2DfE/4N3tu5HZGJP1GUg8nG+o8lknHLSuszhP8ispuNNQ==
+  version "1.0.28"
+  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.28/1bab8da441d3201672192b086563e86d2dd3016e330e8554d5918db4351ed46f#2f6d92fa864a5b6b9f965bd0d9de6b70f5f92ae4"
+  integrity sha512-6Zn84ZY6IE1ldeIK/igydik2jbZdRJZ7cUQaBQZKb7oMPAnGOmlbigqGb0RtBqFqMXKLWwfe1Wv7q9GX9SaCtQ==
   dependencies:
     chokidar "^3.5.3"
     esbuild "0.12"

@@ -8,5 +8,6 @@ ApplizeProjectMakeUp(builder, {
     distDirectory: resolve(__dirname, 'dist'),
     entryHTML: resolve(__dirname, 'entry', 'index.html'),
     entryTS: resolve(__dirname, 'entry', 'index.ts'),
+    treeShaking: true
 });
 builder.run();

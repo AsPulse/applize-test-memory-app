@@ -15,7 +15,7 @@ export const test = new ApplizePage<APISchema>(adb => {
                 v('p').text(`単語 ${solving.en} の理解度が1${correctly ? '上がり' : '下がり'}ました。`);
                 solving = null;
                 v('button').text('次の問題へ').on('click', () => newQuestion());
-                v('button').text('単語一覧へ戻る').on('click', () => { location.href = '/words'});
+                v('button').text('単語一覧へ戻る').on('click', () => adb.pageMove('/words'));
             });
         }
 
@@ -43,4 +43,5 @@ export const test = new ApplizePage<APISchema>(adb => {
 
         newQuestion();
     })();
+    adb.finish({ title: 'テスト' });
 });

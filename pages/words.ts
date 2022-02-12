@@ -4,8 +4,8 @@ import { APISchema } from "../src/apiSchema";
 export const words = new ApplizePage<APISchema>(adb => {
     adb.build('h1').text('単語一覧');
     adb.build('div').in(v => {
-        v('button').text('単語を追加').on('click', () => { location.href = '/words/add' });
-        v('button').text('テストする').on('click', () => { location.href = '/test' });
+        v('button').text('単語を追加').on('click', () => adb.pageMove('/words/add'));
+        v('button').text('テストする').on('click', () => adb.pageMove('/test' ));
     });
     const table = adb.build('table')
     void (async () => {
@@ -25,4 +25,5 @@ export const words = new ApplizePage<APISchema>(adb => {
             });
         });
     })();
+    adb.finish({ title: '単語の一覧' });
 });

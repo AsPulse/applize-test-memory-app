@@ -9,7 +9,7 @@ export const addWord = new ApplizePage<APISchema>(adb => {
     ].forEach(v => adb.build('p').text(v));
     const textarea = adb.build('textarea')
     const submit = adb.build('div').in(v => adb.build('button').text('追加')).expose;
-    adb.build('button').text('単語一覧へ戻る').on('click', () => { location.href = '/words' })
+    adb.build('button').text('単語一覧へ戻る').on('click', () => adb.pageMove('/words'))
 
     submit.on('click', async () => {
         const data = textarea.element.value
@@ -18,6 +18,8 @@ export const addWord = new ApplizePage<APISchema>(adb => {
                 en: v[0], ja: v[1]
             }));
         await adb.api('addWords', { data });
-        location.href = '/words';
+        adb.pageMove('/words');
     });
+
+    adb.finish({ title: '単語の追加' });
 });
