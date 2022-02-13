@@ -3,9 +3,9 @@
 
 
 "@aspulse/applize@^1.0.16":
-  version "1.0.28"
-  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.28/1bab8da441d3201672192b086563e86d2dd3016e330e8554d5918db4351ed46f#2f6d92fa864a5b6b9f965bd0d9de6b70f5f92ae4"
-  integrity sha512-6Zn84ZY6IE1ldeIK/igydik2jbZdRJZ7cUQaBQZKb7oMPAnGOmlbigqGb0RtBqFqMXKLWwfe1Wv7q9GX9SaCtQ==
+  version "1.0.31"
+  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.31/475a5291a0e11f42659acb1c1d64c82379151dff12f9014faa5ae3652d1a915e#b0123cc93ca6fabe10f8b09bdd5e952a0f64e07b"
+  integrity sha512-GhsnlMFazrf5362scLhd68qGO/RfFoPcpLTOyXBcyfKTQ9kJI/T4pll3ZIjTV4NgieBKi7UF/ki1dsy3ikvCDQ==
   dependencies:
     chokidar "^3.5.3"
     esbuild "0.12"
@@ -483,6 +483,11 @@ typescript@^4.5.4:
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
   integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
+
+uglify-js@^3.15.1:
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.1.tgz#9403dc6fa5695a6172a91bc983ea39f0f7c9086d"
+  integrity sha512-FAGKF12fWdkpvNJZENacOH0e/83eG6JyVQyanIJaBXCN1J11TUQv1T1/z8S+Z0CG0ZPk1nPcreF/c7lrTd0TEQ==
 
 util-deprecate@~1.0.1:
   version "1.0.2"

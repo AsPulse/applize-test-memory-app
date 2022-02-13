@@ -7,7 +7,7 @@ export interface IWord {
     memoryLevel: number,
     createdAt: number,
 }
-export interface APISchema extends ServerAPISchema {
+export type APISchema = ServerAPISchema<{
     getWords: {
         input: { count: number },
         output: { words: {
@@ -49,4 +49,4 @@ export interface APISchema extends ServerAPISchema {
         input: { id: string },
         output: {}
     }
-}
+}>;
