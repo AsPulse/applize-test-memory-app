@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aspulse/applize@^1.0.33":
-  version "1.0.36"
-  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.36/5d0e792e792be4506d7312d9c8351fbae290930b32ef8dd58a27c934d412185d#6f997965c1204a2fd68a9ff61916f1b1f76c1041"
-  integrity sha512-hQ6jXUZZUVia2P0+OwY1DWfqzv7byih66rLEQDaf1UrMPDevNIXyOQcpVJFXbMkyoFDGIxYEwt1z+PMucUSveg==
+"@aspulse/applize@^1.0.36":
+  version "1.0.38"
+  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.38/927c544f7377087776bbef0062055fd60df3733e27dddf3038702f1f287b00ee#3a2431d6440afdca44c5e92c1f493b4e4d2b3774"
+  integrity sha512-HbW/Nh6mJ/ZCpQoP0yUyGFq+xqarXwvPhgjn+25qMDeC+at3Tm16OKoKqUosR+yYcIhnTIOTks29F8DRIVBAlA==
   dependencies:
     chokidar "^3.5.3"
     esbuild "0.12"
@@ -16,9 +16,9 @@
     typescript "^4.5.4"
 
 "@types/node@*":
-  version "17.0.19"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.19.tgz#726171367f404bfbe8512ba608a09ebad810c7e6"
-  integrity sha512-PfeQhvcMR4cPFVuYfBN4ifG7p9c+Dlh3yUZR6k+5yQK7wX3gDgVxBly4/WkBRs9x4dmcy1TVl08SY67wwtEvmA==
+  version "17.0.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.20.tgz#29626bd9c9119df5b8194353d34044c895fe56e3"
+  integrity sha512-Q15Clj3lZSLnhVA6yKw1G7SQz46DeL9gO1TEgfK1OQGvMdQ6TUWmCeWf1QBUNkw2BDfV52i2YuYd9OF3ZwGhjw==
 
 "@types/webidl-conversions@*":
   version "6.1.1"
