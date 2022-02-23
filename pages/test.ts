@@ -1,5 +1,10 @@
 import { ApplizePage } from "@aspulse/applize/lib/clientPage";
+import { filledButton } from "../components/filledButton";
+import { outlinedButton } from "../components/outlinedButton";
+import { textInput } from "../components/textInput";
 import { APISchema } from "../src/apiSchema";
+import { mainColor } from "../style/consts/color";
+import { horizontalSpace } from "../style/horizontalSpace";
 
 export const test = new ApplizePage<APISchema>(adb => {
     adb.build('h1').text('テストします');
@@ -14,8 +19,10 @@ export const test = new ApplizePage<APISchema>(adb => {
             wrapper.in(v => {
                 v('p').text(`単語 ${solving.en} の理解度が1${correctly ? '上がり' : '下がり'}ました。`);
                 solving = null;
-                v('button').text('次の問題へ').on('click', () => newQuestion());
-                v('button').text('単語一覧へ戻る').on('click', () => adb.pageMove('/words'));
+                v('div').classAdd(horizontalSpace(v, '0.3em', '0.5em')).in(v => {
+                  filledButton(v, '次の問題へ', mainColor, 'white').on('click', () => newQuestion());
+                  outlinedButton(v, '単語一覧へ戻る', 'rgb(0 0 0 / 20%)', 'black').on('click', () => adb.pageMove('/words'));
+                });
             });
         }
 
@@ -26,8 +33,10 @@ export const test = new ApplizePage<APISchema>(adb => {
                 v('p').text(`単語: ${solving.en}`);
                 v('p').text(`訳: ${solving.ja}`);
                 v('p').text(`あなたの訳: ${answer}`);
-                v('button').text('正解').on('click', () => judge(true));
-                v('button').text('不正解').on('click', () => judge(false));
+                v('div').classAdd(horizontalSpace(v, '0.3em', '0.5em')).in(v => {
+                  filledButton(v, '正解！', mainColor, 'white').on('click', () => judge(true));
+                  filledButton(v, '不正解！', mainColor, 'white').on('click', () => judge(false));
+                });
             });
         }
         async function newQuestion() {
@@ -36,8 +45,10 @@ export const test = new ApplizePage<APISchema>(adb => {
             wrapper.empty();
             wrapper.in(v => {
                 v('p').text(`訳してください: ${solving.en}`);
-                const input = v('input');
-                v('button').text('確定！').on('click', () => answer(input.element.value));
+                v('div').classAdd(horizontalSpace(v, '0.3em', '0.5em')).in(v => {
+                  const input = textInput(v);
+                  filledButton(v, '確定！', mainColor, 'white').on('click', () => answer(input.element.value));
+                });
             });
         }
 

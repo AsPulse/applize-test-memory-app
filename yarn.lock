@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aspulse/applize@^1.0.16":
-  version "1.0.31"
-  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.31/475a5291a0e11f42659acb1c1d64c82379151dff12f9014faa5ae3652d1a915e#b0123cc93ca6fabe10f8b09bdd5e952a0f64e07b"
-  integrity sha512-GhsnlMFazrf5362scLhd68qGO/RfFoPcpLTOyXBcyfKTQ9kJI/T4pll3ZIjTV4NgieBKi7UF/ki1dsy3ikvCDQ==
+"@aspulse/applize@^1.0.33":
+  version "1.0.36"
+  resolved "https://npm.pkg.github.com/download/@aspulse/applize/1.0.36/5d0e792e792be4506d7312d9c8351fbae290930b32ef8dd58a27c934d412185d#6f997965c1204a2fd68a9ff61916f1b1f76c1041"
+  integrity sha512-hQ6jXUZZUVia2P0+OwY1DWfqzv7byih66rLEQDaf1UrMPDevNIXyOQcpVJFXbMkyoFDGIxYEwt1z+PMucUSveg==
   dependencies:
     chokidar "^3.5.3"
     esbuild "0.12"
@@ -16,9 +16,9 @@
     typescript "^4.5.4"
 
 "@types/node@*":
-  version "17.0.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.17.tgz#a8ddf6e0c2341718d74ee3dc413a13a042c45a0c"
-  integrity sha512-e8PUNQy1HgJGV3iU/Bp2+D/DXh3PYeyli8LgIwsQcs1Ar1LoaWHSIT6Rw+H2rNJmiq6SNWiDytfx8+gYj7wDHw==
+  version "17.0.19"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.19.tgz#726171367f404bfbe8512ba608a09ebad810c7e6"
+  integrity sha512-PfeQhvcMR4cPFVuYfBN4ifG7p9c+Dlh3yUZR6k+5yQK7wX3gDgVxBly4/WkBRs9x4dmcy1TVl08SY67wwtEvmA==
 
 "@types/webidl-conversions@*":
   version "6.1.1"
@@ -324,9 +324,9 @@ mongodb-connection-string-url@^2.4.1:
     whatwg-url "^11.0.0"
 
 mongodb@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-4.3.1.tgz#e346f76e421ec6f47ddea5c8f5140e6181aaeb94"
-  integrity sha512-sNa8APSIk+r4x31ZwctKjuPSaeKuvUeNb/fu/3B6dRM02HpEgig7hTHM8A/PJQTlxuC/KFWlDlQjhsk/S43tBg==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-4.4.0.tgz#3b14b9701067713d5c9afb6d6e4a86ca7b969824"
+  integrity sha512-1hPhutJj6yxxu0ymwsO0uEimTo+QTh3oQP6YHxmLneBFBOGydYFdnmDDuLiGWimAlMdRN9WuDXY+JGp47aeOwA==
   dependencies:
     bson "^4.6.1"
     denque "^2.0.1"
